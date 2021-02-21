@@ -8,7 +8,7 @@ namespace MedicalAppointmentApp.Models
 {
     public class VisitTime
     {
-        [Required]
+        [Key, Required]
         public int VisitTimeId { get; set; }
         [Column(TypeName = "time")]
         public TimeSpan From { get; set; }

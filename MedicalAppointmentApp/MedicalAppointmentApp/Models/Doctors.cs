@@ -8,7 +8,7 @@ namespace MedicalAppointmentApp.Models
 {
     public class Doctors
     {
-        [Required]
+        [Key, Required]
         public int DoctorId { get; set; }
         [Required]
         public string Name { get; set; }
