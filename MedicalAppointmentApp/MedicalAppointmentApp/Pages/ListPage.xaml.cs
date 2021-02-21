@@ -18,9 +18,11 @@ namespace MedicalAppointmentApp.Pages
     /// </summary>
     public partial class ListPage : Page
     {
-        public ListPage(bool isDoctor)
+        private MainWindow _window;
+        public ListPage(MainWindow window, bool isDoctor)
         {
             InitializeComponent();
+            this._window = window;
         }
     }
 }

@@ -13,28 +13,13 @@ namespace MedicalAppointmentApp
     {
         /// <summary>
         /// Main Window Page Constructor (no arguments)
+        /// Sets Main Window content to Navigation page on Initialization
+        /// Passes refference to self as argument to Navigation Page
         /// </summary>
         public MainWindow()
         {
-            InitializeComponent();
-        }
-        
-        private void Admin_Click(object sender, RoutedEventArgs e)
-        {
-            AdminPage adminPage = new AdminPage();
-            this.Content = adminPage;
-        }
-
-        private void Doctors_Click(object sender, RoutedEventArgs e)
-        {
-            ListPage listPage = new ListPage(true);
-            this.Content = listPage;
-        }
-
-        private void Customers_Click(object sender, RoutedEventArgs e)
-        {
-            ListPage listPage = new ListPage(false);
-            this.Content = listPage;
+            InitializeComponent();        
+            this.Content = new NavigationPage(this);
         }
     }
 }
