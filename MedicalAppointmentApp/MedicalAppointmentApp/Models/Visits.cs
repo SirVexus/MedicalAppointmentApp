@@ -10,7 +10,7 @@ namespace MedicalAppointmentApp.Models
         public int VisitId { get; set; }
         public int ClientId { get; set; }
         public int DoctorId { get; set; }
-        public string LocationId { get; set; }
+        public int LocationId { get; set; }
         public int VisitTimeId { get; set; }
         public virtual Doctors Doctors { get; set; }
         public virtual Clients Clients { get; set; }
