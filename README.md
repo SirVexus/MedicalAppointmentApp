@@ -4,7 +4,12 @@ Aplikacja do umawiania i zarządzania wizytami medycznymi.
 # Wstęp
 Medical Appointment Manager jest aplikacją odpowiedzialną za przechowywanie danych przechodni w lokalnej bazie za pomocą przygotowanej do tego windowsowej aplikacji. Posiada ona własną bazę danych w technologii SQLite dzięki czemu działa bez dostępu do internetu. Oprócz opcji dodawania pracowników, klientów i oddziałów, posiada ona też opcje filtrowania wyników, co ułatwia zarządzanie i wyświetlanie tych danych.
 
-# Działanie
+# Opis
+### Testy
+Ze względu na hermetyczną strukturę poszczególnych stron, testy nie są wymagane
+### Specyfikacja Techniczna
+Opis klas publicznych poszczególnych stron znajduje się [tutaj](https://github.com/SirVexus/MedicalAppointmentApp/blob/main/MedicalAppointmentApp.xml)
+### Specyfikacja Wizualna
 Aplikacja składa się z następujących stron:
 * Wybór opcji - użytkownik może przejść do ekranu administratora w celu dodania nowych danych oraz wyświetlić istniejące z filterowaniem według klientów lub lekarzy.
 adsdasdasda
@@ -36,8 +41,8 @@ Wykorzystane technologie:
 
 # Inne
 ### Zgłaszanie błędów
-dsadsa
+Problemy z aplikacją proszę zgłaszać [tutaj](https://github.com/SirVexus/MedicalAppointmentApp/issues)
 ### Licencja
-asfasdfas
+Aplikacja jest udostępniona na zasadach [GNU - GENERAL PUBLIC LICENSE](https://github.com/SirVexus/MedicalAppointmentApp/blob/main/LICENSE)
 ### Kontakt
-fasfasfasdsa
+W razie pytań zapraszam do [kontaktu](https://github.com/SirVexus)
