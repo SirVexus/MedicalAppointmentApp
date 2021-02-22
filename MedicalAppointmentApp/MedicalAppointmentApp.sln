@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicalAppointmentApp", "Me
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Medical Appointments Manager Installer", "Medical Appointments Manager Installer\Medical Appointments Manager Installer.vdproj", "{1493FFBD-E340-4DDE-905F-132EBC59F686}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalAppointmentAppUnitTests", "MedicalAppointmentAppUnitTests\MedicalAppointmentAppUnitTests.csproj", "{FCF9312B-A1CD-454C-8091-E06CD375003B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{4C237A91-C944-4505-BEA0-82D7880FDFA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1493FFBD-E340-4DDE-905F-132EBC59F686}.Debug|Any CPU.ActiveCfg = Debug
 		{1493FFBD-E340-4DDE-905F-132EBC59F686}.Release|Any CPU.ActiveCfg = Release
+		{FCF9312B-A1CD-454C-8091-E06CD375003B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF9312B-A1CD-454C-8091-E06CD375003B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF9312B-A1CD-454C-8091-E06CD375003B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF9312B-A1CD-454C-8091-E06CD375003B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

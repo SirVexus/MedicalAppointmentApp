@@ -88,21 +88,21 @@ namespace MedicalAppointmentApp.Pages
             int fromTimeId = _fromHours[FromTimeVisitInput.SelectedIndex].Id;
             int toTimeId = _toHours[ToVisitInput.SelectedIndex].Id;
             if (selectedDoctorLocationId != selectedLocationId)
-                SetErrorMessage("Selected Doctor isn't available at Selected Location", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage,"Selected Doctor isn't available at Selected Location", Brushes.Red);
             else if (fromTimeId > toTimeId)
-                SetErrorMessage("Visit End Time can't be lower than Visit Start Time", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "Visit End Time can't be lower than Visit Start Time", Brushes.Red);
             else if (fromTimeId == toTimeId)
-                SetErrorMessage("Visit End Time can't be equal to Visit Start Time", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "Visit End Time can't be equal to Visit Start Time", Brushes.Red);
             else if (string.IsNullOrWhiteSpace(LocationVisitInput.Text))
-                SetErrorMessage("Location not selected", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "Location not selected", Brushes.Red);
             else if (string.IsNullOrWhiteSpace(CustomerVisitInput.Text))
-                SetErrorMessage("Customer not selected", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "Customer not selected", Brushes.Red);
             else if (string.IsNullOrWhiteSpace(FromTimeVisitInput.Text))
-                SetErrorMessage("From hour not selected", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "From hour not selected", Brushes.Red);
             else if (string.IsNullOrWhiteSpace(ToVisitInput.Text))
-                SetErrorMessage("To hour not selected", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "To hour not selected", Brushes.Red);
             else if (string.IsNullOrWhiteSpace(DoctorVisitInput.Text))
-                SetErrorMessage("Doctor not selected", Brushes.Red);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "Doctor not selected", Brushes.Red);
             else
             {
                 int visitTimeId = new Random().Next();
@@ -115,14 +115,14 @@ namespace MedicalAppointmentApp.Pages
                 _context.SaveChanges();
                 _context.Add(new Visits
                 {
-                    VisitId = GenerateId(),
+                    VisitId = Utilities.Utilities.GenerateId(),
                     ClientId = _context.Clients.ToList()[CustomerVisitInput.SelectedIndex].ClientId,
                     DoctorId = selectedDoctorId,
                     LocationId = selectedLocationId,
                     VisitTimeId = visitTimeId
                 });
                 _context.SaveChanges();
-                SetErrorMessage("Visit Added Correctly", Brushes.Green);
+                Utilities.Utilities.SetErrorMessage(errorMessage, "Visit Added Correctly", Brushes.Green);
             }
         }
         private List<DropDownElement> FillTimeDropDown()
@@ -131,16 +131,6 @@ namespace MedicalAppointmentApp.Pages
             for (int i = 0; i < 24; i++)
                 timeElements.Add(new DropDownElement { Id=i, Name=$"{i}:00" });
             return timeElements;
-        }
-        private void SetErrorMessage(string message, Brush color)
-        {
-            errorMessage.Text = message;
-            errorMessage.Foreground = color;
-        }
-        private int GenerateId()
-        {
-            byte[] bytes = new Guid().ToByteArray();
-            return ((int)bytes[0]) | ((int)bytes[1] << 8) | ((int)bytes[2] << 16) | ((int)bytes[3] << 24);
         }
     }
 }
