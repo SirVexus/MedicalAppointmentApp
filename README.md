@@ -6,7 +6,7 @@ Medical Appointment Manager jest aplikacją odpowiedzialną za przechowywanie da
 
 # Opis
 ### Testy
-Ze względu na hermetyczną strukturę poszczególnych stron, testy nie są wymagane
+Ze względu na hermetyczną strukturę poszczególnych stron, testowane zostały tylko metody statyczne w klasie Utilities, kod znajduje się w projekcie  MedicalAppointmentAppUnitTests 
 ### Specyfikacja Techniczna
 Opis klas publicznych poszczególnych stron znajduje się [tutaj](https://github.com/SirVexus/MedicalAppointmentApp/blob/main/MedicalAppointmentApp.xml)
 ### Specyfikacja Wizualna
