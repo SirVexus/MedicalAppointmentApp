@@ -16,7 +16,7 @@ adsdasdasda
 * Ekran administratora - pozwala na dodanie nowego regionu, nowego lekarza wraz z przypisaniem go do dodanego wcześniej regionu lun nowego klienta.
 fsafsafsa
 * Ekran nowej wizyty - umawia się za jego pomocą konkretne wizyty porzez parowanie ze sobą lekarzy, pacjentów, lokacji i godziny, aplikacja filtruje lekarzy według wybranego regionu co nie pozwala na przypisanie lekarzowi wizyty w regionie, który nie jest jego miejscem pracy.
-fsafasfas
+![medicalScreenA](https://user-images.githubusercontent.com/48628436/108748881-64d4f700-753f-11eb-87da-8f3e5078a757.jpg)
 * Ekran wizyt pacjentów - wyświetla listę wizyt dla wybranego pacjenta
 fsafas
 * Ekran wizyt lekarzy - wyświetla listę wizyt dla wybranego lekarza
