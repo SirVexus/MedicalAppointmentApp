@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MedicalAppointmentApp</name>
+    </assembly>
+    <members>
+        <member name="T:MedicalAppointmentApp.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.MainWindow.#ctor">
+            <summary>
+            Main Window Page Constructor (no arguments)
+            Sets Main Window content to Navigation page on Initialization
+            Passes refference to self as argument to Navigation Page
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.Clients">
+            <summary>
+            Clients Table Model
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Clients.ClientId">
+            <summary>
+            Unique Id of Client
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Clients.Name">
+            <summary>
+            First Name of Client
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Clients.LastName">
+            <summary>
+            Last Name of Client
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Clients.Visits">
+            <summary>
+            Visits related to this Client
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.DataGridElement">
+            <summary>
+            Model for DataGrid Element of Data Grid in ListPage
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DataGridElement.clientName">
+            <summary>
+            Client First Name and Last Name
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DataGridElement.doctorName">
+            <summary>
+            Doctor First Name and Last Name
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DataGridElement.location">
+            <summary>
+            Visit Location
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DataGridElement.from">
+            <summary>
+            Visit Start Time
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DataGridElement.to">
+            <summary>
+            Visit End Time
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.Doctors">
+            <summary>
+            Doctors Table Model
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Doctors.DoctorId">
+            <summary>
+            Unique Id of Doctor
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Doctors.Name">
+            <summary>
+            First Name of Doctor
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Doctors.LastName">
+            <summary>
+            Last Name of Doctor
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Doctors.LocationId">
+            <summary>
+            Doctors work locations Id
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Doctors.location">
+            <summary>
+            Location this Doctor is related to
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Doctors.Visits">
+            <summary>
+            Visists related to this Doctor
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.DropDownElement">
+            <summary>
+            Schema for custom ComboBox elements
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DropDownElement.Id">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.DropDownElement.Name">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.Locations">
+            <summary>
+            Location Table Model
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Locations.LocationId">
+            <summary>
+            Unique Id of Location
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Locations.Name">
+            <summary>
+            Name of the Location
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Locations.Doctors">
+            <summary>
+            Doctors related to this Location
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Locations.Visits">
+            <summary>
+            Visits related to this Location
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.Visits">
+            <summary>
+            Visits Table Model
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.VisitId">
+            <summary>
+            Unique Id of Visit
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.ClientId">
+            <summary>
+            Visit client Id
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.DoctorId">
+            <summary>
+            Visit Doctor Id
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.LocationId">
+            <summary>
+            Visit Location Id
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.VisitTimeId">
+            <summary>
+            Visit Time Id
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.Doctors">
+            <summary>
+            Doctor related to this visit
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.Clients">
+            <summary>
+            Client related to this visit
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.Locations">
+            <summary>
+            Loction related to this visit
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.Visits.VisitTime">
+            <summary>
+            List of Time rows this visit is related to
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Models.VisitTime">
+            <summary>
+            VisitTime Table Model
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.VisitTime.VisitTimeId">
+            <summary>
+            Unique Id of Visit Period
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.VisitTime.From">
+            <summary>
+            Start of Visit
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.VisitTime.To">
+            <summary>
+            End of Visit
+            </summary>
+        </member>
+        <member name="P:MedicalAppointmentApp.Models.VisitTime.Visits">
+            <summary>
+            Visit this period is related to
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Pages.AdminPage">
+            <summary>
+            Interaction logic for AdminPage.xaml
+            </summary>
+            <summary>
+            AdminPage
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.AdminPage.#ctor(MedicalAppointmentApp.MainWindow)">
+            <summary>
+            AdminPage constructor with window refference as parameter
+            Loads database context
+            Fills Locations selectBox with Locations from database
+            </summary>
+            <param name="window"></param>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.AdminPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Pages.ListPage">
+            <summary>
+            Interaction logic for ListPage.xaml
+            </summary>
+            <summary>
+            ListPage
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.ListPage.#ctor(MedicalAppointmentApp.MainWindow,System.Boolean)">
+            <summary>
+            ListPage constructor gets two parameters refference to window and bool if list is for doctors or for customers
+            Loads database, puts data into drop down (based on bool doctors list or clients list) and data grid
+            </summary>
+            <param name="window"></param>
+            <param name="isDoctor"></param>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.ListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Pages.NavigationPage">
+            <summary>
+            Interaction logic for NavigationPage.xaml
+            </summary>
+            <summary>
+            NavigationPage
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.NavigationPage.#ctor(MedicalAppointmentApp.MainWindow)">
+            <summary>
+            NavigationPage constructor, gets refference to mainWindow as argument
+            </summary>
+            <param name="window"></param>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.NavigationPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MedicalAppointmentApp.Pages.VisitsPage">
+            <summary>
+            Interaction logic for VisitsPage.xaml
+            </summary>
+            <summary>
+            VisitsPage
+            </summary>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.VisitsPage.#ctor(MedicalAppointmentApp.MainWindow)">
+            <summary>
+            VisitPage constructor takes refference to window as parameter
+            Loads database context
+            Fills dropdowns
+            </summary>
+            <param name="window"></param>
+        </member>
+        <member name="M:MedicalAppointmentApp.Pages.VisitsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
