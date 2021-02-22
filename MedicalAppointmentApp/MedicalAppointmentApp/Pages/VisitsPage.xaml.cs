@@ -17,7 +17,7 @@ namespace MedicalAppointmentApp.Pages
     {
         private MainWindow _window;
         private AppointmentsContext _context;
-        private bool handle = true;
+        private bool _handle = true;
         private List<DropDownElement> _doctors;
         private List<DropDownElement> _fromHours;
         private List<DropDownElement> _toHours;
@@ -59,13 +59,13 @@ namespace MedicalAppointmentApp.Pages
         
         private void Location_Visit_Input_DropDownClosed(object sender, EventArgs e)
         {
-            if (handle) Handle();
-            handle = true;
+            if (_handle) Handle();
+            _handle = true;
         }
         private void Location_Visit_Input_Selection_Changed(object sender, SelectionChangedEventArgs e)
         {
             ComboBox cmb = sender as ComboBox;
-            handle = !cmb.IsDropDownOpen;
+            _handle = !cmb.IsDropDownOpen;
             Handle();
         }
         private void Handle()
@@ -105,13 +105,14 @@ namespace MedicalAppointmentApp.Pages
                 SetErrorMessage("Doctor not selected", Brushes.Red);
             else
             {
-                int visitTimeId = GenerateId();
+                int visitTimeId = new Random().Next();
                 _context.Add(new VisitTime
                 {
                     VisitTimeId = visitTimeId,
                     From = TimeSpan.Parse(_fromHours[FromTimeVisitInput.SelectedIndex].Name),
                     To = TimeSpan.Parse(_toHours[ToVisitInput.SelectedIndex].Name)
                 });
+                _context.SaveChanges();
                 _context.Add(new Visits
                 {
                     VisitId = GenerateId(),
@@ -120,6 +121,7 @@ namespace MedicalAppointmentApp.Pages
                     LocationId = selectedLocationId,
                     VisitTimeId = visitTimeId
                 });
+                _context.SaveChanges();
                 SetErrorMessage("Visit Added Correctly", Brushes.Green);
             }
         }
