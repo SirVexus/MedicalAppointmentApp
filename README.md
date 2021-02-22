@@ -37,7 +37,7 @@ Wykorzystane technologie:
 * Entity Framework Core
 * Linq
 * SQLite
-* Dat Annotations
+* Data Annotations
 
 # Inne
 ### Zgłaszanie błędów
