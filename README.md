@@ -25,7 +25,7 @@ Aplikacja składa się z następujących stron:
 ![medicalScreenE](https://user-images.githubusercontent.com/48628436/108749629-56d3a600-7540-11eb-94f6-53689a223128.jpg)
 * Ekran wizyt lekarzy - wyświetla listę wizyt dla wybranego lekarza
 
-* ![medicalScreenD](https://user-images.githubusercontent.com/48628436/108749482-255ada80-7540-11eb-9ac4-73e69baea3a7.jpg)
+![medicalScreenD](https://user-images.githubusercontent.com/48628436/108749482-255ada80-7540-11eb-9ac4-73e69baea3a7.jpg)
 
 # Instalacja
 Włączenie aplikacji:
