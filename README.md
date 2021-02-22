@@ -13,7 +13,7 @@ Opis klas publicznych poszczególnych stron znajduje się [tutaj](https://github
 Aplikacja składa się z następujących stron:
 * Wybór opcji - użytkownik może przejść do ekranu administratora w celu dodania nowych danych oraz wyświetlić istniejące z filterowaniem według klientów lub lekarzy.
 ![medicalScreenC](https://user-images.githubusercontent.com/48628436/108749309-f2184b80-753f-11eb-9c62-a8d7e0b44b87.jpg)
-* Ekran administratora - pozwala na dodanie nowego regionu, nowego lekarza wraz z przypisaniem go do dodanego wcześniej regionu lun nowego klienta.
+* Ekran administratora - pozwala na dodanie nowego regionu, nowego lekarza wraz z przypisaniem go do dodanego wcześniej regionu lub nowego klienta.
 ![medicalScreenB](https://user-images.githubusercontent.com/48628436/108749159-c2694380-753f-11eb-9d26-059694049ed5.jpg)
 * Ekran nowej wizyty - umawia się za jego pomocą konkretne wizyty porzez parowanie ze sobą lekarzy, pacjentów, lokacji i godziny, aplikacja filtruje lekarzy według wybranego regionu co nie pozwala na przypisanie lekarzowi wizyty w regionie, który nie jest jego miejscem pracy.
 ![medicalScreenA](https://user-images.githubusercontent.com/48628436/108749004-88983d00-753f-11eb-9ccd-5b746ff55d02.jpg)
